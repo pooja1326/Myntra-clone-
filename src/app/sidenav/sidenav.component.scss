@@ -1,0 +1,16 @@
+
+@media (min-width:481px)  {
+	.sidebar{
+		display: none;
+	}
+    .sideNav{
+        display: none;
+    }
+}
+
+@media (min-width:481px) {
+    .example-spacer {
+        flex: 1 1 auto;
+      }
+     
+}

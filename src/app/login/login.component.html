@@ -1,0 +1,80 @@
+<form #loginForm="ngForm" (ngSubmit)="handleSubmit(loginForm.value)">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <img
+        mat-card-image
+        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/9/6/2127ba0a-fa66-43de-83ca-367322d814061662403347124-offer-banner-200-1080x496-code-_-MYNTRA200.jpg"
+        alt="Photo of a Shiba Inu"
+      />
+    </mat-card-header>
+
+    <div class="form-content">
+      <mat-card-actions>
+        <p class="welcome">Login or Signup</p>
+        <mat-form-field>
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Email"
+            name="email"
+            ngModel
+          /><br /><br />
+          <input
+            class="form-input"
+            type="password"
+            placeholder="Password"
+            name="password"
+            ngModel
+          />
+        </mat-form-field>
+        <mat-card-content>
+          <h4>
+            By continuing, I agree to the <a href="">Terms of Use</a> &
+            <a href="">Privacy Policy</a>
+          </h4>
+        </mat-card-content>
+        <button mat-raised-button class="button" type="submit">LOGIN</button>
+      </mat-card-actions>
+    </div>
+  </mat-card>
+</form>
+<!-- <div class="form">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <img
+        mat-card-image
+        src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/9/6/2127ba0a-fa66-43de-83ca-367322d814061662403347124-offer-banner-200-1080x496-code-_-MYNTRA200.jpg"
+        alt="Photo of a Shiba Inu"
+      />
+    </mat-card-header>
+    <div class="form-content">
+      <mat-card-actions [formGroup]="loginForm">
+        <p class="welcome">Login or Signup</p>
+        <mat-form-field>
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Email"
+            formControlName="email"
+          /><br /><br />
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Password"
+            formControlName="password"
+          /><br /><br />
+        </mat-form-field>
+        <mat-card-content>
+          <h4>
+            By continuing, I agree to the <a href="">Terms of Use</a> &
+            <a href="">Privacy Policy</a>
+          </h4>
+        </mat-card-content>
+        <button mat-raised-button class="button" type="submit">login</button>
+      </mat-card-actions>
+    </div>
+  </mat-card>
+  <input type="text" placeholder="Enter Username" name="email" ngModel />
+</div> -->

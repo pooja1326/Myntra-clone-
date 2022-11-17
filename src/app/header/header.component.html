@@ -1,0 +1,99 @@
+<p>
+  <mat-toolbar class="header" color="primary">
+    <img
+      class="myntra-logo"
+      src="https://images.news18.com/ibnlive/uploads/2021/01/1611996262_ynt.jpeg?im=FitAndFill"
+    />
+    <button
+      routerLink="MEN"
+      mat-button
+      [matMenuTriggerFor]="menu"
+      class="header-left"
+    >
+      MEN
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Boy</button>
+      <button mat-menu-item>Girl</button>
+    </mat-menu>
+    <button routerLink="WOMEN" mat-button [matMenuTriggerFor]="menu">
+      WOMEN
+    </button>
+    <!-- <mat-menu #menu="matMenu">
+      <button mat-menu-item>Boy</button>
+      <button mat-menu-item>Girl</button>
+    </mat-menu> -->
+    <button mat-button [matMenuTriggerFor]="menu">KIDS</button>
+    <button mat-button [matMenuTriggerFor]="menu">HOME & LIVING</button>
+    <button mat-button [matMenuTriggerFor]="menu">BEAUTY</button>
+    <button mat-button [matMenuTriggerFor]="menu">STUDIO</button>
+    <mat-icon class="search-icon">search</mat-icon>
+    <input
+      class="search-bar"
+      type="form-control"
+      placeholder="        Search for products, brands and more"
+    />
+
+    <div class="header-flex">
+      <div class="header-profile">
+        <button
+          mat-icon-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with cart icon"
+        >
+          <mat-icon>person</mat-icon>
+        </button>
+        <div class="header-profileName">
+          <!-- <p>Profile</p> -->
+
+          <mat-menu #Menu="matMenu">
+            <button mat-menu-item><a routerLink="login">login</a></button>
+            <button mat-menu-item>
+              <a routerLink="login" (click)="logout()">logout</a>
+            </button>
+          </mat-menu>
+          <button mat-flat-button [matMenuTriggerFor]="Menu">Profile</button>
+        </div>
+      </div>
+
+      <!-- <div class="header-profile">
+        <button
+          mat-icon-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with cart icon"
+        >
+          <mat-icon>user </mat-icon>
+        </button> -->
+      <!-- <div class="header-profileName">
+          <a routerLink="login">login</a>
+          <br />
+          <a routerLink="login" (click)="logout()">logout</a>
+        </div> -->
+      <!-- </div> -->
+      <div class="header-profile">
+        <button
+          mat-icon-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with cart icon"
+        >
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <div class="header-profileName">
+          <p>Wishlist</p>
+        </div>
+      </div>
+      <div class="header-profile">
+        <button
+          mat-icon-button
+          class="example-icon favorite-icon"
+          aria-label="Example icon-button with cart icon"
+        >
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <div class="header-profileName">
+          <p>BAG</p>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar>
+</p>

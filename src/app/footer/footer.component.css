@@ -1,0 +1,37 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-bar {
+  background-color: #FAFBFC;
+  color: black;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+}
+
+.item1 {
+  display: contents;
+}
+
+.footer-items {
+  height: 28px !important;
+}
+
+.header {
+  background-color: yellow;
+}
+
+.example-spacer {
+  flex: 2 2 auto;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .footer {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.component.css.map */

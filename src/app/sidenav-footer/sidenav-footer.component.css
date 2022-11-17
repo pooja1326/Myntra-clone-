@@ -1,0 +1,38 @@
+.footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: column;
+}
+
+.item1 {
+  display: contents;
+}
+
+.footer-items {
+  height: 28px !important;
+}
+
+.header {
+  background-color: yellow;
+}
+
+.example-spacer {
+  flex: 2 2 auto;
+  margin-top: 12px;
+}
+
+.footer-bar {
+  flex-direction: column;
+}
+
+@media (min-width: 481px) {
+  .footer {
+    display: none;
+  }
+}/*# sourceMappingURL=sidenav-footer.component.css.map */

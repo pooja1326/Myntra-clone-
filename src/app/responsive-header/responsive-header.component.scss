@@ -1,0 +1,15 @@
+
+@media  (min-width :480px) {
+	.header-responsive{
+		display: none;
+	}
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-typography{
+    margin:0px;
+    position: absolute;
+    top:0;
+  }

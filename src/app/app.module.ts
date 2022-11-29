@@ -30,6 +30,9 @@ import { MatInputModule } from '@angular/material/input';
 import { ResponsiveHeaderComponent } from './responsive-header/responsive-header.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthGuard } from './auth/auth.guard';
+import { CategoryComponent } from './category/category.component';
+import { ProductComponent } from './product/product.component';
+import { CartComponent } from './cart/cart.component';
 
 // import { CategoriesComponent } from './categories/categories.component';
 @NgModule({
@@ -45,6 +48,9 @@ import { AuthGuard } from './auth/auth.guard';
     DashboardComponent,
     ResponsiveHeaderComponent,
     AuthComponent,
+    CategoryComponent,
+    ProductComponent,
+    CartComponent,
 
     // CategoriesComponent,
   ],

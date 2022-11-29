@@ -1,0 +1,44 @@
+@import '../app.component.scss';
+
+.example-card {
+    max-width: 200px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .product-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .cart_bttn{
+    background-color: #EC3D6A;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 15px;
+    border: aliceblue;
+   text-transform: uppercase;
+    margin-top:10px;
+  }
+  .cart_bttn:hover{
+    color: #EC3D6A;
+    background: transparent;
+  }
+  .content{
+    margin-top: 10px;
+  }
+  .content span{
+    font-weight: 800;
+    font-size: 18px;
+  }
+.bttn{
+  background: #EC3D6A;
+    border-radius: 50%;
+    font-size: 1px;
+    color: white;
+    margin: 0 8px;
+    border: aliceblue;
+}

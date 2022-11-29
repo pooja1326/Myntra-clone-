@@ -1,13 +1,4 @@
 <mat-grid-list cols="5" rowHeight="1:1" class="grid">
-  <!-- <mat-grid-tile class="grid-A">
-      <img
-        src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MKU93_VW_34FR+watch-41-alum-starlight-nc-8s_VW_34FR_WF_CO_GEO_IN?wid=750&hei=712&trim=1,0&fmt=p-jpg&qlt=95&.v=1632171039000,1661978672671"
-    /></mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-  </mat-grid-list> -->
   <img
     class="image"
     src="https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_600,c_limit,fl_progressive/assets/images/retaillabs/2022/5/5/5bacbdb9-42c9-4372-b70a-58b7b939e65a1651729895166-Download-app.png"
@@ -17,37 +8,11 @@
     <h4 class="text-banner-subtitle"></h4>
   </div>
   <div class="flex-container-picks">
-    <div>
-      <img
-        class="flex-container-2"
-        src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/8d65d400-decd-4f42-902c-a40350a16ed11645602543346-Kurtas.jpg"
-      />
-    </div>
-    <div>
-      <img
-        class="flex-container-2"
-        src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/062cea23-9a6a-44b9-bdd4-87cae6a462311645602543339-Kurta-sets.jpg"
-      />
-    </div>
-    <div>
-      <img
-        class="flex-container-2"
-        src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/398ee53b-5899-4a9a-9d0b-b35d60c01cb41645602543325-Dresses.jpg"
-      />
-    </div>
-    <div>
-      <img
-        class="flex-container-2"
-        src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/c6b09c0f-5c57-472c-a3fc-854ec506a90e1645602543387-Men-T-shirt.jpg"
-      />
-    </div>
-    <div>
-      <img
-        class="flex-container-2"
-        src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/82a9be01-3032-4725-9500-bcc94366b7931645602543399-Mens-Shirts.jpg"
-      />
+    <div *ngFor="let category1 of category">
+      <app-category [category]="category1"> </app-category>
     </div>
   </div>
+
   <div class="text-banner-container">
     <h4 class="text-banner">CATEGORIES TO BAG</h4>
     <h4 class="text-banner-subtitle"></h4>

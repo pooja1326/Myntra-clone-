@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-content class="matcard">
+    <div class="cartItems" *ngFor="let cartList1 of cartLists">
+      <img class="cartImage" src="{{ cartList1.imageUrl }}" />
+
+      <div class="cartDescription">
+        <h4>{{ cartList1.brandName }}</h4>
+        <p>{{ cartList1.description }}</p>
+
+        <h3>₹ {{ cartList1.price }}</h3>
+        <div>
+          <button (click)="deleteItems(cartList1.id)">Remove from cart</button>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

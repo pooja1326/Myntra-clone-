@@ -30,7 +30,8 @@ import { MatInputModule } from '@angular/material/input';
 import { ResponsiveHeaderComponent } from './responsive-header/responsive-header.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthGuard } from './auth/auth.guard';
-import { ProductComponent } from './product/product.component';
+
+// import { CategoriesComponent } from './categories/categories.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import { ProductComponent } from './product/product.component';
     DashboardComponent,
     ResponsiveHeaderComponent,
     AuthComponent,
-    ProductComponent,
+
+    // CategoriesComponent,
   ],
   imports: [
     BrowserModule,

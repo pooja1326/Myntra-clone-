@@ -16,8 +16,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SidenavFooterComponent } from './sidenav-footer/sidenav-footer.component';
-import { MenComponent } from './men/men.component';
-import { WomenComponent } from './women/women.component';
+
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LoginComponent } from './login/login.component';
 import { MaterialModule } from './material-module';
@@ -42,8 +41,7 @@ import { CartComponent } from './cart/cart.component';
     FooterComponent,
     SidenavComponent,
     SidenavFooterComponent,
-    MenComponent,
-    WomenComponent,
+
     LoginComponent,
     DashboardComponent,
     ResponsiveHeaderComponent,

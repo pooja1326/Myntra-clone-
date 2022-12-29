@@ -21,7 +21,7 @@ export class CartComponent implements OnInit {
       return object.id === id;
     });
 
-    console.log(indexOfObject);
+    // console.log(indexOfObject);
 
     this.cartLists.splice(indexOfObject, 1);
     localStorage.setItem('cartItems', JSON.stringify(this.cartLists));
